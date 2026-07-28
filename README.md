@@ -48,9 +48,30 @@ imprimante Bluetooth. L'installation prend environ 5 minutes.
    le statut passe à **Connectée** ✅.
 6. Appuyez sur **Page de test** : un ticket de test doit sortir.
 
-## Étape 4 — C'est prêt !
+## Étape 4 — Configurer la caisse Guidap (une seule fois)
 
-Vous pouvez retourner sur votre caisse Guidap et imprimer normalement.
+> Ce réglage se fait aussi sur la tablette de caisse : il est propre à chaque
+> appareil.
+
+1. Sur la tablette, ouvrez votre **caisse Guidap** dans Chrome et
+   connectez-vous.
+2. Ouvrez la page de **configuration des tickets de caisse** de votre
+   administration Guidap.
+3. Dans **« Point de vente utilisé sur... »**, choisissez
+   **Tablette ou smartphone Android**.
+4. Dans **« Taille du papier »**, choisissez la taille correspondant à votre
+   imprimante (par exemple **imprimante 80mm** pour une Epson TM-m30).
+5. Appuyez sur **Paramètres avancés** (juste en dessous).
+6. Dans **« Application d'impression »**, sélectionnez
+   **Guidap Print (HTTP, sans changement d'app)**.
+7. Laissez le champ **Port** à `9631` (ne le changez que si Guidap vous le
+   demande).
+8. Appuyez sur **Imprimer un test** : un ticket doit sortir, **sans quitter la
+   page de la caisse**.
+
+## Étape 5 — C'est prêt !
+
+Vous pouvez utiliser votre caisse Guidap et imprimer normalement.
 L'application Guidap Print travaille en arrière-plan (une petite notification
 « Guidap Print actif » reste affichée : c'est normal, ne la fermez pas).
 
@@ -58,7 +79,12 @@ L'application Guidap Print travaille en arrière-plan (une petite notification
 
 - **Le ticket ne sort pas** : vérifiez que l'imprimante est allumée, avec du
   papier, et que l'application Guidap Print affiche « Connectée ».
+- **Rien ne se passe quand vous imprimez depuis la caisse** : vérifiez dans les
+  **Paramètres avancés** de la configuration des tickets (étape 4) que
+  l'application d'impression sélectionnée est bien
+  **Guidap Print (HTTP, sans changement d'app)**.
 - **Message d'erreur lors de l'impression** : ouvrez Guidap Print →
   **Journal** — l'erreur y est affichée. Envoyez une capture d'écran au
   support Guidap.
 - Pour toute question : contactez le support Guidap.
+
